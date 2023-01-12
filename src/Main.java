@@ -7,7 +7,13 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
+        task8();
+
+
     }
+
 
     // задание 1
 //    private static void task1() {
@@ -140,6 +146,7 @@ public class Main {
 
         }
     }
+
     private static void task5() {
         System.out.println(" Задание 5");
         int salary = 15000;
@@ -147,12 +154,57 @@ public class Main {
         while (salary <= 12000000) {
             salary += salary / 100 * 7;
             x++;
-            if (x%6==0) {
+            if (x % 6 == 0) {
                 System.out.println("месяц " + x + " " + salary);
             }
         }
     }
-}
+
+    private static void task6() {
+        System.out.println("Задание 6");
+        int salary = 15000;
+        for (int i = 1; i <= 108; i++) {
+            salary += salary / 100 * 7;
+            if (i % 6 == 0) {
+                System.out.println("месяц " + i + " " + salary);
+            }
+        }
+    }
+
+    private static void task7() {
+        System.out.println("Задание 7");
+        int week = 6;
+        do {
+            System.out.println(" Сегодня пятница " + week + " - e число, время сдавать отчет");
+            week = week + 7;
+        }
+        while (week <= 31);
+
+    }
+
+    private static void task8() {
+        System.out.println(" Задание 8");
+        int yearStart = 1823;
+        int yearEnd = 2023;
+
+        do {
+            System.out.println(yearStart+" ");
+//            if(yearStart<yearEnd){
+//                System.out.println(yearStart+100);
+//            }
+            yearStart= yearStart+79;
+
+        }
+        while (yearStart<=yearEnd);
+
+            System.out.println(yearStart);
+
+    }
+
+
+    }
+
+
 
 
 
