@@ -183,7 +183,7 @@ public class Main {
     }
 
     private static void task8() {
-        System.out.println(" Задание 8");
+        System.out.println(" Задание 8 ");
         int yearStart = 1823;
         int yearEnd = 2023;
 
