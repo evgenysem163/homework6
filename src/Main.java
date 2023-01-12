@@ -179,9 +179,7 @@ public class Main {
             week = week + 7;
         }
         while (week <= 31);
-
     }
-
     private static void task8() {
         System.out.println(" Задание 8 ");
         int yearStart = 1823;
