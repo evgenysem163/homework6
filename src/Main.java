@@ -10,11 +10,7 @@ public class Main {
         task6();
         task7();
         task8();
-
-
     }
-
-
     // задание 1
 //    private static void task1() {
 //        System.out.println(" Задание 1");
@@ -97,15 +93,15 @@ public class Main {
 //    }
     private static void task1() {
         System.out.println("Задача1");
-        int salary = 0;
+        int expectedAmount = 2459000;
         int total = 0;
-        while (total < 2459000) {
+        int month = 1;
+        while (total < expectedAmount) {
             total = total + 15000;
-            total = total + salary;
-            System.out.println(total);
+            System.out.println("Месяц " + month + " сумма накоплений равна " + total + " рублей ");
+            month++;
         }
     }
-
     private static void task2() {
         System.out.println("Задание 2 ");
         int i = 0;
@@ -113,15 +109,12 @@ public class Main {
             i++;
             System.out.print(i + " ");
         }
-        System.out.println("");
+        System.out.println();
         for (int j = 10; j > 0; j--) {
             System.out.print(j + " ");
-
         }
-        System.out.println("");
+        System.out.println();
     }
-
-
     private static void task3() {
         System.out.println(" Задание 3 ");
         int population = 12000000;
@@ -132,9 +125,7 @@ public class Main {
             population = population + population * raz / 1000;
             System.out.println("Год " + i + " численность населения составляет " + population);
         }
-
     }
-
     private static void task4() {
         System.out.println(" Задание 4");
         int salary = 15000;
@@ -143,10 +134,8 @@ public class Main {
             salary += salary / 100 * 7;
             x++;
             System.out.println("месяц " + x + " " + salary);
-
         }
     }
-
     private static void task5() {
         System.out.println(" Задание 5");
         int salary = 15000;
@@ -159,7 +148,6 @@ public class Main {
             }
         }
     }
-
     private static void task6() {
         System.out.println("Задание 6");
         int salary = 15000;
@@ -170,7 +158,6 @@ public class Main {
             }
         }
     }
-
     private static void task7() {
         System.out.println("Задание 7");
         int week = 6;
@@ -184,22 +171,16 @@ public class Main {
         System.out.println(" Задание 8 ");
         int yearStart = 1823;
         int yearEnd = 2023;
-
         do {
             System.out.println(yearStart+" ");
 //            if(yearStart<yearEnd){
 //                System.out.println(yearStart+100);
 //            }
             yearStart= yearStart+79;
-
         }
         while (yearStart<=yearEnd);
-
             System.out.println(yearStart);
-
     }
-
-
     }
 
 
